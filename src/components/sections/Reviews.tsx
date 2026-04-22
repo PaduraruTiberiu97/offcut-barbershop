@@ -3,11 +3,11 @@ import { Reveal } from "@/components/Reveal";
 import { Star, ChevronLeft, ChevronRight, Quote } from "lucide-react";
 
 const reviews = [
-  { name: "James W.", role: "Regular since 2019", rating: 5, text: "Marco doesn't just cut hair — he reads your face, your style, your mood. Best fade I've had in 15 years of looking. Worth every penny." },
+  { name: "James W.", role: "Regular since 2019", rating: 5, text: "Marco doesn't just cut hair — he reads your face, your style, your mood. Best fade I've had in 15 years. Worth every penny." },
   { name: "Daniel K.", role: "First visit", rating: 5, text: "Walked in skeptical, walked out planning my next four appointments. The hot towel shave alone is a religious experience." },
-  { name: "Anthony R.", role: "Wedding party", rating: 5, text: "Did all the groomsmen the morning of my wedding. Calm, professional, and somehow finished us all on time. A pro." },
-  { name: "Marcus L.", role: "Monthly client", rating: 5, text: "I've followed Marco across two shops. The man is an artist. Booking system makes it effortless to keep my schedule locked in." },
-  { name: "Oliver P.", role: "Beard guy", rating: 5, text: "My beard has never looked this intentional. He shaped it in a way that finally suits my jaw. Game changer." },
+  { name: "Anthony R.", role: "Wedding party", rating: 5, text: "Did all the groomsmen the morning of my wedding. Calm, professional, finished us all on time. A pro." },
+  { name: "Marcus L.", role: "Monthly client", rating: 5, text: "I've followed Marco across two shops. The man's an artist. Booking online keeps my schedule locked in." },
+  { name: "Oliver P.", role: "Beard guy", rating: 5, text: "My beard's never looked this intentional. He shaped it in a way that finally suits my jaw. Game changer." },
 ];
 
 export const Reviews = () => {
@@ -22,55 +22,51 @@ export const Reviews = () => {
   const prev = () => setIdx((i) => (i - 1 + reviews.length) % reviews.length);
 
   return (
-    <section id="reviews" className="py-28 bg-secondary/30 relative overflow-hidden">
-      <div className="absolute inset-0 bg-radial-glow opacity-50" />
+    <section id="reviews" className="py-28 bg-secondary/40 relative overflow-hidden bg-grain">
       <div className="container relative">
         <Reveal>
           <div className="text-center max-w-2xl mx-auto mb-16">
-            <div className="text-xs uppercase tracking-[0.3em] text-primary mb-4">— Reviews</div>
-            <h2 className="font-serif text-4xl lg:text-5xl mb-6">In their words</h2>
+            <div className="font-condensed text-sm uppercase tracking-[0.4em] text-primary mb-3">— Word on the street</div>
+            <h2 className="font-display text-5xl lg:text-6xl uppercase mb-6 leading-[0.9]">
+              What they're<br/><span className="text-primary">saying.</span>
+            </h2>
             <div className="flex items-center justify-center gap-1 text-primary">
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-5 w-5 fill-primary" />
               ))}
-              <span className="ml-3 text-sm text-muted-foreground">4.9 / 5 — based on 312 reviews</span>
+              <span className="ml-3 font-condensed text-base tracking-wider uppercase text-muted-foreground">4.9 / 5 — 312 reviews</span>
             </div>
           </div>
         </Reveal>
 
         <Reveal>
-          <div className="relative max-w-3xl mx-auto">
-            <Quote className="absolute -top-8 -left-2 h-20 w-20 text-primary/10" />
+          <div className="relative max-w-3xl mx-auto border-2 border-foreground/15 bg-background p-10 lg:p-14">
+            <Quote className="absolute -top-6 -left-2 h-16 w-16 text-primary fill-primary" />
 
-            <div className="min-h-[280px] grid place-items-center">
+            <div className="min-h-[260px] grid place-items-center">
               {reviews.map((r, i) => (
                 <div
                   key={i}
-                  className={`absolute inset-0 transition-all duration-700 ${
+                  className={`absolute inset-0 p-10 lg:p-14 transition-all duration-700 ${
                     i === idx ? "opacity-100 translate-x-0" : "opacity-0 translate-x-8 pointer-events-none"
                   }`}
                 >
-                  <div className="text-center px-4">
-                    <div className="flex justify-center gap-1 mb-6">
-                      {[...Array(r.rating)].map((_, j) => (
-                        <Star key={j} className="h-4 w-4 text-primary fill-primary" />
-                      ))}
-                    </div>
-                    <p className="font-serif text-2xl lg:text-3xl leading-relaxed italic mb-8">
+                  <div className="text-center">
+                    <p className="font-condensed text-2xl lg:text-3xl leading-snug uppercase tracking-wide mb-8">
                       "{r.text}"
                     </p>
-                    <div className="font-medium">{r.name}</div>
-                    <div className="text-sm text-muted-foreground tracking-wide">{r.role}</div>
+                    <div className="font-display text-lg uppercase tracking-wider">{r.name}</div>
+                    <div className="font-condensed text-sm text-primary tracking-[0.25em] uppercase mt-1">{r.role}</div>
                   </div>
                 </div>
               ))}
             </div>
 
-            <div className="flex items-center justify-center gap-4 mt-10">
+            <div className="flex items-center justify-center gap-4 mt-10 relative z-10">
               <button
                 onClick={prev}
-                className="h-11 w-11 grid place-items-center border border-border hover:border-primary hover:text-primary transition-colors"
-                aria-label="Previous review"
+                className="h-11 w-11 grid place-items-center border-2 border-foreground/20 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-colors"
+                aria-label="Previous"
               >
                 <ChevronLeft className="h-4 w-4" />
               </button>
@@ -80,7 +76,7 @@ export const Reviews = () => {
                     key={i}
                     onClick={() => setIdx(i)}
                     className={`h-1.5 transition-all duration-500 ${
-                      i === idx ? "w-8 bg-primary" : "w-1.5 bg-border hover:bg-muted-foreground"
+                      i === idx ? "w-10 bg-primary" : "w-1.5 bg-border hover:bg-muted-foreground"
                     }`}
                     aria-label={`Review ${i + 1}`}
                   />
@@ -88,8 +84,8 @@ export const Reviews = () => {
               </div>
               <button
                 onClick={next}
-                className="h-11 w-11 grid place-items-center border border-border hover:border-primary hover:text-primary transition-colors"
-                aria-label="Next review"
+                className="h-11 w-11 grid place-items-center border-2 border-foreground/20 hover:bg-primary hover:border-primary hover:text-primary-foreground transition-colors"
+                aria-label="Next"
               >
                 <ChevronRight className="h-4 w-4" />
               </button>
