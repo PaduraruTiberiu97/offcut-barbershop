@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Instagram as InstagramIcon, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Clock, ArrowRight, AtSign } from "lucide-react";
 
 export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
   return (
@@ -29,7 +29,7 @@ export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
             { icon: MapPin, label: "Location", value: "142 Maple Street\nBrooklyn, NY 11201" },
             { icon: Clock, label: "Hours", value: "Tue – Sat\n9:00 AM – 7:00 PM" },
             { icon: Phone, label: "Call", value: "+1 (555) 248-3920", href: "tel:+15552483920" },
-            { icon: Instagram, label: "Follow", value: "@marco.thebarber", href: "https://instagram.com" },
+            { icon: AtSign, label: "Follow", value: "@marco.thebarber", href: "https://instagram.com" },
           ].map((c, i) => (
             <Reveal key={c.label} delay={i * 100}>
               <a
