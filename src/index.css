@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Archivo+Black&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One&family=Bungee&family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,57 +6,61 @@
 
 @layer base {
   :root {
-    /* Street / shop palette — ink, bone, oxblood */
-    --background: 0 0% 7%;
-    --foreground: 36 14% 90%;
+    /* GTA × Rick & Morty acid pop palette */
+    --background: 48 95% 92%;          /* cream paper */
+    --foreground: 240 30% 8%;          /* near-black ink */
 
-    --card: 0 0% 10%;
-    --card-foreground: 36 14% 90%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 30% 8%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 36 14% 90%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 30% 8%;
 
-    /* Oxblood / barber pole red */
-    --primary: 4 72% 46%;
-    --primary-foreground: 36 14% 95%;
-    --primary-glow: 8 80% 55%;
+    /* Hot magenta primary */
+    --primary: 330 95% 55%;
+    --primary-foreground: 48 95% 96%;
+    --primary-glow: 330 100% 70%;
 
-    --secondary: 0 0% 13%;
-    --secondary-foreground: 36 14% 90%;
+    /* Acid lime secondary */
+    --secondary: 80 90% 60%;
+    --secondary-foreground: 240 30% 8%;
 
-    --muted: 0 0% 13%;
-    --muted-foreground: 36 6% 60%;
+    --muted: 48 40% 86%;
+    --muted-foreground: 240 20% 30%;
 
-    --accent: 4 72% 46%;
-    --accent-foreground: 36 14% 95%;
+    /* Cyan accent */
+    --accent: 185 90% 55%;
+    --accent-foreground: 240 30% 8%;
 
-    --destructive: 0 62% 45%;
-    --destructive-foreground: 36 14% 95%;
+    --destructive: 0 90% 55%;
+    --destructive-foreground: 48 95% 96%;
 
-    --border: 0 0% 16%;
-    --input: 0 0% 16%;
-    --ring: 4 72% 46%;
+    --border: 240 30% 8%;
+    --input: 240 30% 8%;
+    --ring: 330 95% 55%;
 
-    --radius: 0rem;
+    --radius: 0.75rem;
 
-    /* Gradients */
-    --gradient-red: linear-gradient(135deg, hsl(4 75% 40%), hsl(8 85% 55%));
-    --gradient-ink: linear-gradient(180deg, hsl(0 0% 7% / 0) 0%, hsl(0 0% 5% / 0.85) 65%, hsl(0 0% 4%) 100%);
+    /* Extra pop colors */
+    --pop-yellow: 50 100% 55%;
+    --pop-purple: 270 85% 60%;
+    --pop-orange: 22 95% 58%;
 
-    /* Shadows */
-    --shadow-hard: 8px 8px 0 0 hsl(4 72% 46%);
-    --shadow-elegant: 0 20px 60px -20px hsl(0 0% 0% / 0.7);
+    /* Shadows — chunky cartoon offset */
+    --shadow-pop: 6px 6px 0 0 hsl(var(--foreground));
+    --shadow-pop-lg: 10px 10px 0 0 hsl(var(--foreground));
+    --shadow-pop-pink: 6px 6px 0 0 hsl(var(--primary));
 
     --transition-elegant: cubic-bezier(0.16, 1, 0.3, 1);
 
-    --sidebar-background: 0 0% 7%;
-    --sidebar-foreground: 36 14% 90%;
-    --sidebar-primary: 4 72% 46%;
-    --sidebar-primary-foreground: 36 14% 95%;
-    --sidebar-accent: 0 0% 13%;
-    --sidebar-accent-foreground: 36 14% 90%;
-    --sidebar-border: 0 0% 16%;
-    --sidebar-ring: 4 72% 46%;
+    --sidebar-background: 48 95% 92%;
+    --sidebar-foreground: 240 30% 8%;
+    --sidebar-primary: 330 95% 55%;
+    --sidebar-primary-foreground: 48 95% 96%;
+    --sidebar-accent: 185 90% 55%;
+    --sidebar-accent-foreground: 240 30% 8%;
+    --sidebar-border: 240 30% 8%;
+    --sidebar-ring: 330 95% 55%;
   }
 }
 
@@ -71,9 +75,6 @@
 
   body {
     @apply bg-background text-foreground font-sans antialiased;
-    background-image:
-      radial-gradient(hsl(0 0% 100% / 0.025) 1px, transparent 1px);
-    background-size: 4px 4px;
   }
 
   h1, h2, h3, h4, h5 {
@@ -82,31 +83,38 @@
 }
 
 @layer utilities {
-  .text-stroke {
-    -webkit-text-stroke: 1.5px hsl(var(--foreground));
+  .text-stroke-ink {
+    -webkit-text-stroke: 2px hsl(var(--foreground));
     color: transparent;
   }
 
-  .bg-grain {
-    position: relative;
-  }
-  .bg-grain::after {
-    content: "";
-    position: absolute; inset: 0;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='0.5'/></svg>");
-    mix-blend-mode: overlay;
-    opacity: 0.18;
-    pointer-events: none;
+  .ink-outline {
+    @apply border-[3px] border-foreground;
   }
 
-  .bg-gradient-red { background-image: var(--gradient-red); }
-  .text-gradient-red {
-    @apply bg-clip-text text-transparent;
-    background-image: var(--gradient-red);
+  .shadow-pop { box-shadow: var(--shadow-pop); }
+  .shadow-pop-lg { box-shadow: var(--shadow-pop-lg); }
+  .shadow-pop-pink { box-shadow: var(--shadow-pop-pink); }
+
+  .bg-halftone {
+    background-image: radial-gradient(hsl(var(--foreground) / 0.18) 1.2px, transparent 1.2px);
+    background-size: 10px 10px;
   }
 
-  .shadow-hard { box-shadow: var(--shadow-hard); }
-  .shadow-elegant { box-shadow: var(--shadow-elegant); }
+  .bg-stripes-yellow {
+    background-image: repeating-linear-gradient(
+      45deg,
+      hsl(var(--pop-yellow)) 0 18px,
+      hsl(var(--foreground)) 18px 22px
+    );
+  }
+
+  .text-shadow-pop {
+    text-shadow: 4px 4px 0 hsl(var(--foreground));
+  }
+  .text-shadow-pop-pink {
+    text-shadow: 4px 4px 0 hsl(var(--primary));
+  }
 
   .reveal {
     opacity: 0;
@@ -117,14 +125,6 @@
     opacity: 1;
     transform: translateY(0);
   }
-
-  .stripes-red {
-    background-image: repeating-linear-gradient(
-      45deg,
-      hsl(var(--primary)) 0 14px,
-      hsl(var(--foreground)) 14px 28px
-    );
-  }
 }
 
 @keyframes marquee {
@@ -133,6 +133,11 @@
 }
 
 @keyframes float-slow {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
+  0%, 100% { transform: translateY(0) rotate(-2deg); }
+  50% { transform: translateY(-14px) rotate(2deg); }
+}
+
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
 }
