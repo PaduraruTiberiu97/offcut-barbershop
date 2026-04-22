@@ -1,6 +1,6 @@
 import { Reveal } from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
-import { MapPin, Phone, Instagram, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Phone, Instagram as InstagramIcon, Clock, ArrowRight } from "lucide-react";
 
 export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
   return (
