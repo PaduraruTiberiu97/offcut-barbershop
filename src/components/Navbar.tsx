@@ -29,17 +29,17 @@ export const Navbar = ({ bookingUrl }: { bookingUrl: string }) => {
       <nav className="container flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 group">
           <Scissors className="h-5 w-5 text-primary transition-transform group-hover:rotate-12" />
-          <span className="font-serif text-xl tracking-wider">
+          <span className="font-display text-xl tracking-wider uppercase">
             MARCO<span className="text-primary">.</span>
           </span>
         </a>
 
-        <ul className="hidden md:flex items-center gap-9 text-sm tracking-wide">
+        <ul className="hidden md:flex items-center gap-9 font-condensed text-base uppercase tracking-[0.2em]">
           {links.map((l) => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="relative text-foreground/80 hover:text-primary transition-colors after:absolute after:left-0 after:-bottom-1 after:h-px after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+                className="relative text-foreground/80 hover:text-primary transition-colors after:absolute after:left-0 after:-bottom-1 after:h-0.5 after:w-0 after:bg-primary after:transition-all hover:after:w-full"
               >
                 {l.label}
               </a>

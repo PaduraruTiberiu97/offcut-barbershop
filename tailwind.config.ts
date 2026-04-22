@@ -14,7 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ['"Playfair Display"', 'Georgia', 'serif'],
+        display: ['"Archivo Black"', 'Impact', 'sans-serif'],
+        condensed: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+        serif: ['"Archivo Black"', 'Impact', 'sans-serif'],
         sans: ['Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
