@@ -1,4 +1,5 @@
 import heroImg from "@/assets/hero-shop.jpg";
+import denisImg from "@/assets/denis-portrait.png";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Scissors, Zap } from "lucide-react";
 
@@ -57,14 +58,27 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
           <div className="relative rounded-2xl overflow-hidden ink-outline shadow-pop-lg bg-card rotate-1">
             <img
               src={heroImg}
-              alt="Offcut — shop-ul lui Denis"
+              alt="Offcut Barbershop — shop-ul lui Denis"
               width={1080}
               height={1600}
               className="w-full h-[60vh] lg:h-[72vh] object-cover"
             />
           </div>
+          {/* Denis overlay portrait */}
+          <div className="absolute -bottom-10 -right-6 w-[58%] max-w-[300px] rotate-[-4deg] animate-float-slow">
+            <div className="relative ink-outline rounded-2xl overflow-hidden shadow-pop-lg bg-card">
+              <img
+                src={denisImg}
+                alt="Denis — barber la Offcut"
+                className="w-full h-auto object-cover block"
+              />
+            </div>
+            <div className="absolute -top-3 -left-3 bg-primary text-primary-foreground ink-outline rounded-full px-3 py-1 font-display uppercase text-xs shadow-pop -rotate-6">
+              Denis
+            </div>
+          </div>
           {/* Sticker */}
-          <div className="absolute -bottom-6 -left-6 bg-[hsl(var(--pop-yellow))] ink-outline rounded-full p-5 shadow-pop animate-float-slow">
+          <div className="absolute -top-6 -left-6 bg-[hsl(var(--pop-yellow))] ink-outline rounded-full p-5 shadow-pop animate-float-slow">
             <Scissors className="h-8 w-8" />
           </div>
           <div className="absolute -top-4 -right-4 bg-primary text-primary-foreground ink-outline rounded-2xl px-4 py-2 font-display uppercase text-sm shadow-pop -rotate-6">

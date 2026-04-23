@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
-  { name: "Tuns Signature", price: "90 lei", duration: "45 min", desc: "Discuție, tunsoare la milimetru, prosop fierbinte și styling.", color: "bg-primary text-primary-foreground" },
-  { name: "Aranjat Barbă", price: "60 lei", duration: "30 min", desc: "Conturare, linie clară, prosop cald, ulei de barbă.", color: "bg-secondary" },
-  { name: "Pachet Complet", price: "140 lei", duration: "75 min", desc: "Tuns + barbă + ras pe brici + masaj scalp.", color: "bg-accent" },
-  { name: "Ras Clasic", price: "70 lei", duration: "40 min", desc: "Brici tradițional cu spumă caldă. Ritualul complet.", color: "bg-[hsl(var(--pop-yellow))]" },
-  { name: "Tată & Fiu", price: "130 lei", duration: "60 min", desc: "Două tunsori, unul lângă altul. Treabă pe bune.", color: "bg-[hsl(var(--pop-purple))] text-primary-foreground" },
-  { name: "Refresh", price: "50 lei", duration: "20 min", desc: "Aranjat rapid între programări. Să stai mereu fresh.", color: "bg-[hsl(var(--pop-orange))] text-foreground" },
+  { name: "Tuns Skinfade", price: "70 lei", duration: "30 min", desc: "Skinfade curat, conturat la milimetru. Cea mai cerută tunsoare.", color: "bg-primary text-primary-foreground" },
+  { name: "Tuns Modern", price: "60 lei", duration: "30 min", desc: "Tunsori moderne cu 0.5 și 0 pe lateral. Linie clară, look fresh.", color: "bg-secondary" },
+  { name: "Tuns Modern + Barbă", price: "80 lei", duration: "30 min", desc: "Tunsoare modernă plus aranjat barba. Pachet rapid, totul pus la punct.", color: "bg-accent" },
+  { name: "Tuns Barbă", price: "20 lei", duration: "10 min", desc: "Aranjat și conturat barba. Intri, ieși, gata.", color: "bg-[hsl(var(--pop-yellow))]" },
+  { name: "Skinfade + Barbă", price: "90 lei", duration: "30 min", desc: "Skinfade plus barbă aranjată. Combo-ul preferat al băieților.", color: "bg-[hsl(var(--pop-purple))] text-primary-foreground" },
+  { name: "Skinfade + Barbă + Spălat", price: "100 lei", duration: "30 min", desc: "Pachet complet — tuns, barbă și spălat. Pleci ca scos din cutie.", color: "bg-[hsl(var(--pop-orange))] text-foreground" },
 ];
 
 export const Services = ({ bookingUrl }: { bookingUrl: string }) => {
