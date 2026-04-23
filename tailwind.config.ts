@@ -14,10 +14,10 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Bowlby One"', '"Anton"', 'Impact', 'sans-serif'],
-        condensed: ['"Bungee"', '"Anton"', 'Impact', 'sans-serif'],
-        serif: ['"Bowlby One"', '"Anton"', 'Impact', 'sans-serif'],
-        sans: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Bowlby One"', "Impact", "sans-serif"],
+        condensed: ['"Bungee"', "Impact", "sans-serif"],
+        serif: ['"Bowlby One"', "Impact", "sans-serif"],
+        sans: ['"Space Grotesk"', "Inter", "system-ui", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -91,9 +91,9 @@ export default {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
-        "marquee": "marquee 60s linear infinite",
+        marquee: "marquee 50s linear infinite",
         "float-slow": "float-slow 5s ease-in-out infinite",
-        "wiggle": "wiggle 0.6s ease-in-out infinite",
+        wiggle: "wiggle 0.6s ease-in-out infinite",
       },
     },
   },
