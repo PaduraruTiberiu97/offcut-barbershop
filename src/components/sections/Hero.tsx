@@ -101,8 +101,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
                 Programări online <span className="text-accent">✦</span>
                 Toata saptamana <span className="text-[hsl(var(--pop-yellow))]">✦</span>
                 Vibe mișto <span className="text-primary">✦</span>
-                Sâmbătă\n09:00 – 15:00\n\n Duminică\n09:00 – 13:00 Luni – Vin\n09:00 – 19:30{" "}
-                <span className="text-secondary">✦</span>
+                Luni – Vin\n09:00 – 19:30 <span className="text-secondary">✦</span>
                 Sâmbătă\n09:00 – 15:00 <span className="text-accent">✦</span>
                 Duminică\n09:00 – 13:00 <span className="text-[hsl(var(--pop-yellow))]">✦</span>
               </span>
