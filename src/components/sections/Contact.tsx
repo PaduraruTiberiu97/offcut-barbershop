@@ -3,10 +3,27 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, ArrowRight, AtSign } from "lucide-react";
 
 const cards = [
-  { icon: MapPin, label: "Locație", value: "Bd. Dacia 6A\nIași", href: "https://maps.google.com/?q=Bulevardul+Dacia+6A,+Iași", color: "bg-primary text-primary-foreground" },
-  { icon: Clock, label: "Program", value: "Joi – Mar\n09:00 – 19:30", color: "bg-secondary" },
+  {
+    icon: MapPin,
+    label: "Locație",
+    value: "Bd. Dacia 6A\nIași",
+    href: "https://maps.google.com/?q=Bulevardul+Dacia+6A,+Iași",
+    color: "bg-primary text-primary-foreground",
+  },
+  {
+    icon: Clock,
+    label: "Program",
+    value: "Luni – Vin\n09:00 – 19:30\n\n Sâmbătă\n09:00 – 15:00\n\n Duminică\n09:00 – 13:00",
+    color: "bg-secondary",
+  },
   { icon: Phone, label: "Sună", value: "0735 514 992", href: "tel:+40735514992", color: "bg-accent" },
-  { icon: AtSign, label: "Urmărește", value: "@denispalaghia", href: "https://www.instagram.com/denispalaghia/", color: "bg-[hsl(var(--pop-yellow))]" },
+  {
+    icon: AtSign,
+    label: "Urmărește",
+    value: "@denispalaghia",
+    href: "https://www.instagram.com/denispalaghia/",
+    color: "bg-[hsl(var(--pop-yellow))]",
+  },
 ];
 
 export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
@@ -19,7 +36,9 @@ export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
               Programări
             </div>
             <h2 className="font-display text-6xl lg:text-8xl uppercase leading-[0.85] mb-8">
-              Treci<br/>pe la <span className="text-primary text-shadow-pop">Offcut.</span>
+              Treci
+              <br />
+              pe la <span className="text-primary text-shadow-pop">Offcut.</span>
             </h2>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/80 max-w-xl mx-auto mb-10">
               Alege o oră online. Confirmare în câteva secunde. Fără telefoane interminabile.
