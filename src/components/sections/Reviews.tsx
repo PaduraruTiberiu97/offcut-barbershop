@@ -24,7 +24,7 @@ const reviews = [
   {
     name: "Mihai L.",
     role: "Lunar la scaun",
-    text: "L-am urmat pe Denis prin două shop-uri. Omul e artist. Programările online îmi salvează viața.",
+    text: "E genul de loc unde revii fără să stai pe gânduri. Tunsoare bună, programare rapidă, totul simplu.",
     color: "bg-[hsl(var(--pop-yellow))]",
   },
   {

@@ -15,7 +15,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
         <div className="lg:col-span-7 space-y-8">
           <div className="inline-flex items-center gap-2 bg-foreground text-background px-4 py-2 font-display uppercase text-xs tracking-widest rounded-full border-[3px] border-foreground">
             <Zap className="h-4 w-4 fill-[hsl(var(--pop-yellow))] text-[hsl(var(--pop-yellow))]" />
-            Un scaun · Un barber · Din 2014
+            Un scaun · Un barber ·
           </div>
 
           <h1 className="font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.85] uppercase">
