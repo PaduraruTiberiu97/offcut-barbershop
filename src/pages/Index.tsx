@@ -8,7 +8,7 @@ import { Contact } from "@/components/sections/Contact";
 import { Footer } from "@/components/sections/Footer";
 
 // Replace with the barber's actual booking URL
-const BOOKING_URL = "https://booksy.com";
+const BOOKING_URL = "https://mero.ro/p/offcut-barbershop";
 
 const Index = () => {
   return (
