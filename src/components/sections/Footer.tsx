@@ -8,7 +8,7 @@ export const Footer = () => {
           <Scissors className="h-5 w-5 text-primary" />
           <span className="font-display text-background text-lg">OFFCUT<span className="text-primary">.</span></span>
         </div>
-        <div className="opacity-80">© {new Date().getFullYear()} Denis · Tuns cu mâna lui în București</div>
+        <div className="opacity-80">© {new Date().getFullYear()} Denis · Tuns cu mâna lui în Iași</div>
       </div>
     </footer>
   );

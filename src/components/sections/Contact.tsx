@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, ArrowRight, AtSign } from "lucide-react";
 
 const cards = [
-  { icon: MapPin, label: "Locație", value: "Str. Mihai Viteazu 14\nBucurești", color: "bg-primary text-primary-foreground" },
-  { icon: Clock, label: "Program", value: "Marți – Sâmbătă\n10:00 – 20:00", color: "bg-secondary" },
-  { icon: Phone, label: "Sună", value: "+40 723 248 392", href: "tel:+40723248392", color: "bg-accent" },
-  { icon: AtSign, label: "Urmărește", value: "@offcut.denis", href: "https://instagram.com", color: "bg-[hsl(var(--pop-yellow))]" },
+  { icon: MapPin, label: "Locație", value: "Bd. Dacia 6A\nIași", href: "https://maps.google.com/?q=Bulevardul+Dacia+6A,+Iași", color: "bg-primary text-primary-foreground" },
+  { icon: Clock, label: "Program", value: "Joi – Mar\n09:00 – 19:30", color: "bg-secondary" },
+  { icon: Phone, label: "Sună", value: "0735 514 992", href: "tel:+40735514992", color: "bg-accent" },
+  { icon: AtSign, label: "Urmărește", value: "@denispalaghia", href: "https://www.instagram.com/denispalaghia/", color: "bg-[hsl(var(--pop-yellow))]" },
 ];
 
 export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {

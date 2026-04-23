@@ -1,20 +1,22 @@
 import { useState } from "react";
 import { Reveal } from "@/components/Reveal";
 import { X } from "lucide-react";
-import w1 from "@/assets/work-1.jpg";
-import w2 from "@/assets/work-2.jpg";
-import w3 from "@/assets/work-3.jpg";
-import w4 from "@/assets/work-4.jpg";
-import w5 from "@/assets/work-5.jpg";
-import w6 from "@/assets/work-6.jpg";
+import s1 from "@/assets/shop-1.png";
+import s2 from "@/assets/shop-2.png";
+import s3 from "@/assets/shop-3.png";
+import s4 from "@/assets/shop-4.png";
+import s5 from "@/assets/shop-5.png";
+import s6 from "@/assets/shop-6.png";
+import s7 from "@/assets/shop-7.png";
 
 const works = [
-  { src: w1, label: "Mașina", category: "Scule", tilt: "-rotate-2", color: "bg-secondary" },
-  { src: w2, label: "Scaunul", category: "Locul", tilt: "rotate-1", color: "bg-primary" },
-  { src: w3, label: "Trusa", category: "Scule", tilt: "rotate-2", color: "bg-accent" },
-  { src: w4, label: "Deschis", category: "Stradă", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
-  { src: w5, label: "Stâlpul", category: "Vitrină", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
-  { src: w6, label: "Produsele", category: "Raft", tilt: "-rotate-2", color: "bg-[hsl(var(--pop-orange))]" },
+  { src: s5, label: "Mario pe perete", category: "Mural", tilt: "-rotate-2", color: "bg-secondary" },
+  { src: s3, label: "Scaunul lui Rick", category: "Locul", tilt: "rotate-1", color: "bg-primary" },
+  { src: s7, label: "Level Up", category: "Vibe", tilt: "rotate-2", color: "bg-accent" },
+  { src: s2, label: "Sculele", category: "Trusa", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
+  { src: s6, label: "Offcut Wall", category: "Graffiti", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
+  { src: s1, label: "Spirit", category: "Colțul", tilt: "-rotate-2", color: "bg-[hsl(var(--pop-orange))]" },
+  { src: s4, label: "Barber", category: "Perete", tilt: "rotate-1", color: "bg-secondary" },
 ];
 
 export const Work = () => {
@@ -34,7 +36,7 @@ export const Work = () => {
               </h2>
             </div>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/70 max-w-sm">
-              Pereți de cărămidă. Mașini de tuns. Puțin neon. Apasă pe poză.
+              Graffiti pe pereți. Hexagoane pe tavan. Rick & Morty te privesc cum te tunzi.
             </p>
           </div>
         </Reveal>
@@ -64,7 +66,6 @@ export const Work = () => {
         </div>
       </div>
 
-      {/* Lightbox */}
       {active !== null && (
         <div
           className="fixed inset-0 z-[100] bg-foreground/90 backdrop-blur-md grid place-items-center p-4 animate-in fade-in duration-300"
