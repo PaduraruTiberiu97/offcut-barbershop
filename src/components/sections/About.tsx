@@ -50,7 +50,7 @@ export const About = () => {
             <h2 className="font-display text-5xl lg:text-7xl leading-[0.9] uppercase mt-4">
               Meseria
               <br />
-              <span className="text-secondary text-shadow-pop">se învață.</span>
+              <span className="text-primary text-shadow-pop">se învață.</span>
               <br />
               <span className="text-primary text-shadow-pop">pe stradă.</span>
             </h2>
