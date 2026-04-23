@@ -10,8 +10,8 @@ import s6 from "@/assets/shop-6.png";
 import s7 from "@/assets/shop-7.png";
 
 const works = [
-  { src: s5, label: "Mario pe perete", category: "Mural", tilt: "-rotate-2", color: "bg-secondary" },
-  { src: s3, label: "Scaunul lui Rick", category: "Locul", tilt: "rotate-1", color: "bg-primary" },
+  { src: s5, label: "Sari direct la un look mai fresh", category: "Mural", tilt: "-rotate-2", color: "bg-secondary" },
+  { src: s3, label: "Scaunul unde look-ul prinde contur", category: "Locul", tilt: "rotate-1", color: "bg-primary" },
   { src: s7, label: "Level Up", category: "Vibe", tilt: "rotate-2", color: "bg-accent" },
   { src: s2, label: "Sculele", category: "Trusa", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
   { src: s6, label: "Offcut Wall", category: "Graffiti", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
