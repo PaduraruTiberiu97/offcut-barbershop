@@ -3,10 +3,10 @@ import { Button } from "@/components/ui/button";
 import { MapPin, Phone, Clock, ArrowRight, AtSign } from "lucide-react";
 
 const cards = [
-  { icon: MapPin, label: "Location", value: "142 Maple Street\nBrooklyn, NY", color: "bg-primary text-primary-foreground" },
-  { icon: Clock, label: "Hours", value: "Tue – Sat\n9:00 – 19:00", color: "bg-secondary" },
-  { icon: Phone, label: "Call", value: "+1 (555) 248-3920", href: "tel:+15552483920", color: "bg-accent" },
-  { icon: AtSign, label: "Follow", value: "@marco.thebarber", href: "https://instagram.com", color: "bg-[hsl(var(--pop-yellow))]" },
+  { icon: MapPin, label: "Locație", value: "Str. Mihai Viteazu 14\nBucurești", color: "bg-primary text-primary-foreground" },
+  { icon: Clock, label: "Program", value: "Marți – Sâmbătă\n10:00 – 20:00", color: "bg-secondary" },
+  { icon: Phone, label: "Sună", value: "+40 723 248 392", href: "tel:+40723248392", color: "bg-accent" },
+  { icon: AtSign, label: "Urmărește", value: "@offcut.denis", href: "https://instagram.com", color: "bg-[hsl(var(--pop-yellow))]" },
 ];
 
 export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
@@ -16,17 +16,17 @@ export const Contact = ({ bookingUrl }: { bookingUrl: string }) => {
         <Reveal>
           <div className="max-w-4xl mx-auto text-center mb-16">
             <div className="inline-block bg-foreground text-background ink-outline rounded-full px-4 py-1 font-display uppercase text-xs tracking-widest mb-4">
-              Book your chair
+              Programări
             </div>
             <h2 className="font-display text-6xl lg:text-8xl uppercase leading-[0.85] mb-8">
-              Pull up.<br/>Get <span className="text-primary text-shadow-pop">right.</span>
+              Treci<br/>pe la <span className="text-primary text-shadow-pop">Offcut.</span>
             </h2>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/80 max-w-xl mx-auto mb-10">
-              Pick a time online. Confirmation in seconds. No phone tag.
+              Alege o oră online. Confirmare în câteva secunde. Fără telefoane interminabile.
             </p>
             <Button asChild variant="gold" size="lg" className="text-base px-10 py-7">
               <a href={bookingUrl} target="_blank" rel="noopener noreferrer">
-                Schedule appointment <ArrowRight className="ml-2 h-5 w-5" />
+                Fă-ți programare <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
           </div>

@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
-  { name: "Signature Cut", price: "$45", duration: "45 min", desc: "Consultation, precision cut, hot towel finish, styling.", color: "bg-primary text-primary-foreground" },
-  { name: "Beard Sculpt", price: "$30", duration: "30 min", desc: "Shape, line-up, hot towel, premium beard oil.", color: "bg-secondary" },
-  { name: "Full Service", price: "$70", duration: "75 min", desc: "Cut + beard + straight razor + scalp massage.", color: "bg-accent" },
-  { name: "Classic Shave", price: "$35", duration: "40 min", desc: "Traditional straight razor with hot lather ritual.", color: "bg-[hsl(var(--pop-yellow))]" },
-  { name: "Father & Son", price: "$65", duration: "60 min", desc: "Two cuts, side by side. Pass it down.", color: "bg-[hsl(var(--pop-purple))] text-primary-foreground" },
-  { name: "Express Trim", price: "$25", duration: "20 min", desc: "Quick clean-up. Stay sharp between visits.", color: "bg-[hsl(var(--pop-orange))] text-foreground" },
+  { name: "Tuns Signature", price: "90 lei", duration: "45 min", desc: "Discuție, tunsoare la milimetru, prosop fierbinte și styling.", color: "bg-primary text-primary-foreground" },
+  { name: "Aranjat Barbă", price: "60 lei", duration: "30 min", desc: "Conturare, linie clară, prosop cald, ulei de barbă.", color: "bg-secondary" },
+  { name: "Pachet Complet", price: "140 lei", duration: "75 min", desc: "Tuns + barbă + ras pe brici + masaj scalp.", color: "bg-accent" },
+  { name: "Ras Clasic", price: "70 lei", duration: "40 min", desc: "Brici tradițional cu spumă caldă. Ritualul complet.", color: "bg-[hsl(var(--pop-yellow))]" },
+  { name: "Tată & Fiu", price: "130 lei", duration: "60 min", desc: "Două tunsori, unul lângă altul. Treabă pe bune.", color: "bg-[hsl(var(--pop-purple))] text-primary-foreground" },
+  { name: "Refresh", price: "50 lei", duration: "20 min", desc: "Aranjat rapid între programări. Să stai mereu fresh.", color: "bg-[hsl(var(--pop-orange))] text-foreground" },
 ];
 
 export const Services = ({ bookingUrl }: { bookingUrl: string }) => {
@@ -19,14 +19,14 @@ export const Services = ({ bookingUrl }: { bookingUrl: string }) => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-16">
             <div>
               <div className="inline-block bg-[hsl(var(--pop-yellow))] text-foreground ink-outline rounded-full px-4 py-1 font-display uppercase text-xs tracking-widest mb-4">
-                The Menu
+                Meniul
               </div>
               <h2 className="font-display text-5xl lg:text-7xl uppercase leading-[0.9]">
-                Pick your<br/><span className="text-primary text-shadow-pop">poison.</span>
+                Alege-ți<br/><span className="text-primary text-shadow-pop">stilul.</span>
               </h2>
             </div>
             <p className="font-condensed text-xl uppercase tracking-wider text-background/80 max-w-xs">
-              Honest prices. No upsells. Hot towel on the house.
+              Prețuri pe față. Fără șmecherii. Prosop cald din partea casei.
             </p>
           </div>
         </Reveal>
@@ -52,7 +52,7 @@ export const Services = ({ bookingUrl }: { bookingUrl: string }) => {
         <Reveal>
           <div className="text-center mt-14">
             <Button asChild variant="gold" size="lg">
-              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Reserve the chair</a>
+              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Rezervă scaunul</a>
             </Button>
           </div>
         </Reveal>
