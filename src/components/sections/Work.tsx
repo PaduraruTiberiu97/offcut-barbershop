@@ -32,7 +32,7 @@ export const Work = () => {
                 Shop-ul
               </div>
               <h2 className="font-display text-5xl lg:text-7xl uppercase leading-[0.9]">
-                Pe<br/>din<span className="text-primary text-shadow-pop"> ăuntru.</span>
+                Pe<br/><span className="text-primary text-shadow-pop">dinăuntru.</span>
               </h2>
             </div>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/70 max-w-sm">
