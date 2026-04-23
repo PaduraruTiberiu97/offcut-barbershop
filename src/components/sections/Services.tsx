@@ -3,11 +3,11 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight } from "lucide-react";
 
 const services = [
-  { name: "Tuns Skinfade", price: "70 lei", duration: "30 min", desc: "Skinfade curat, conturat la milimetru. Cea mai cerută tunsoare.", color: "bg-primary text-primary-foreground" },
-  { name: "Tuns Modern", price: "60 lei", duration: "30 min", desc: "Tunsori moderne cu 0.5 și 0 pe lateral. Linie clară, look fresh.", color: "bg-secondary" },
-  { name: "Tuns Modern + Barbă", price: "80 lei", duration: "30 min", desc: "Tunsoare modernă plus aranjat barba. Pachet rapid, totul pus la punct.", color: "bg-accent" },
-  { name: "Tuns Barbă", price: "20 lei", duration: "10 min", desc: "Aranjat și conturat barba. Intri, ieși, gata.", color: "bg-[hsl(var(--pop-yellow))]" },
-  { name: "Skinfade + Barbă", price: "90 lei", duration: "30 min", desc: "Skinfade plus barbă aranjată. Combo-ul preferat al băieților.", color: "bg-[hsl(var(--pop-purple))] text-primary-foreground" },
+  { name: "Tuns Skinfade", price: "70 lei", duration: "30 min", desc: "Skinfade curat, conturat la milimetru. Cea mai cerută tunsoare.", color: "bg-primary text-foreground" },
+  { name: "Tuns Modern", price: "60 lei", duration: "30 min", desc: "Tunsori moderne cu 0.5 și 0 pe lateral. Linie clară, look fresh.", color: "bg-secondary text-foreground" },
+  { name: "Tuns Modern + Barbă", price: "80 lei", duration: "30 min", desc: "Tunsoare modernă plus aranjat barba. Pachet rapid, totul pus la punct.", color: "bg-accent text-foreground" },
+  { name: "Tuns Barbă", price: "20 lei", duration: "10 min", desc: "Aranjat și conturat barba. Intri, ieși, gata.", color: "bg-[hsl(var(--pop-yellow))] text-foreground" },
+  { name: "Skinfade + Barbă", price: "90 lei", duration: "30 min", desc: "Skinfade plus barbă aranjată. Combo-ul preferat al băieților.", color: "bg-[hsl(var(--pop-purple))] text-foreground" },
   { name: "Skinfade + Barbă + Spălat", price: "100 lei", duration: "30 min", desc: "Pachet complet — tuns, barbă și spălat. Pleci ca scos din cutie.", color: "bg-[hsl(var(--pop-orange))] text-foreground" },
 ];
 
