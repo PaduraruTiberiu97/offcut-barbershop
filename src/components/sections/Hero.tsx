@@ -90,7 +90,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
 
       {/* Marquee strip */}
       <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-6 overflow-hidden border-y-[3px] border-foreground flex items-center">
-        <div className="flex gap-12 animate-marquee whitespace-nowrap font-display text-xl uppercase">
+        <div className="margin-top 12 flex gap-12 animate-marquee whitespace-nowrap font-display text-xl uppercase">
           {Array(10)
             .fill(0)
             .map((_, i) => (
