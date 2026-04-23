@@ -5,7 +5,7 @@ import { ArrowRight, Scissors, Zap } from "lucide-react";
 
 export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
   return (
-    <section id="top" className="relative min-h-screen overflow-hidden pt-28 pb-44 bg-halftone">
+    <section id="top" className="relative min-h-screen overflow-hidden pt-28 pb-20 bg-halftone">
       {/* Floating chunky shapes */}
       <div className="pointer-events-none absolute -top-10 -left-10 w-48 h-48 rounded-full bg-secondary border-[3px] border-foreground" />
       <div className="pointer-events-none absolute top-40 right-10 w-24 h-24 rounded-full bg-accent border-[3px] border-foreground animate-float-slow" />
@@ -21,11 +21,13 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
           <h1 className="font-display text-[clamp(3.5rem,11vw,9rem)] leading-[0.85] uppercase">
             <span className="block text-shadow-pop">Tuns</span>
             <span className="block text-primary text-shadow-pop">Curat.</span>
-            <span className="block text-stroke-ink">Fără fițe.</span>
+            <span className="block text-stroke-ink">Mișcări precise.</span>
           </h1>
 
           <p className="font-condensed text-xl tracking-wide text-foreground max-w-xl">
-            Un scaun. Un barber. <span className="bg-[hsl(var(--pop-yellow))] px-2 border-2 border-foreground">Zero compromisuri.</span> Denis la Offcut — lama din cartier de peste 10 ani.
+            Un scaun. Un barber.{" "}
+            <span className="bg-[hsl(var(--pop-yellow))] px-2 border-2 border-foreground">Zero compromisuri.</span>{" "}
+            Denis la Offcut — barberul tau din cartier.
           </p>
           <p className="font-condensed text-sm uppercase tracking-[0.2em] text-foreground/60 -mt-4">
             * Programări disponibile și la ceilalți barberi din echipă
@@ -70,11 +72,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
           {/* Denis overlay portrait */}
           <div className="absolute -bottom-6 -left-6 w-[42%] max-w-[210px] rotate-[-4deg] animate-float-slow">
             <div className="relative ink-outline rounded-2xl overflow-hidden shadow-pop-lg bg-card">
-              <img
-                src={denisImg}
-                alt="Denis — barber la Offcut"
-                className="w-full h-auto object-cover block"
-              />
+              <img src={denisImg} alt="Denis — barber la Offcut" className="w-full h-auto object-cover block" />
             </div>
             <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground ink-outline rounded-full px-3 py-1 font-display uppercase text-xs shadow-pop rotate-6">
               Denis
@@ -91,16 +89,18 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
       </div>
 
       {/* Marquee strip */}
-      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-3 overflow-hidden border-y-[3px] border-foreground flex items-center">
-        <div className="flex gap-10 animate-marquee whitespace-nowrap font-display text-sm uppercase">
-          {Array(10).fill(0).map((_, i) => (
-            <span key={i} className="flex items-center gap-10">
-              Tuns curat <span className="text-primary">✦</span>
-              Prosop fierbinte <span className="text-secondary">✦</span>
-              Programări online <span className="text-accent">✦</span>
-              Marți–Sâmbătă <span className="text-[hsl(var(--pop-yellow))]">✦</span>
-            </span>
-          ))}
+      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-6 overflow-hidden border-y-[3px] border-foreground flex items-center">
+        <div className="flex gap-12 animate-marquee whitespace-nowrap font-display text-xl uppercase">
+          {Array(10)
+            .fill(0)
+            .map((_, i) => (
+              <span key={i} className="flex items-center gap-12">
+                Tuns curat <span className="text-primary">✦</span>
+                Prosop fierbinte <span className="text-secondary">✦</span>
+                Programări online <span className="text-accent">✦</span>
+                Marți–Sâmbătă <span className="text-[hsl(var(--pop-yellow))]">✦</span>
+              </span>
+            ))}
         </div>
       </div>
     </section>
