@@ -27,6 +27,9 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
           <p className="font-condensed text-xl tracking-wide text-foreground max-w-xl">
             Un scaun. Un barber. <span className="bg-[hsl(var(--pop-yellow))] px-2 border-2 border-foreground">Zero compromisuri.</span> Denis la Offcut — lama din cartier de peste 10 ani.
           </p>
+          <p className="font-condensed text-sm uppercase tracking-[0.2em] text-foreground/60 -mt-4">
+            * Programări disponibile și la ceilalți barberi din echipă
+          </p>
 
           <div className="flex flex-wrap gap-5 pt-2">
             <Button asChild variant="gold" size="lg">
@@ -65,7 +68,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
             />
           </div>
           {/* Denis overlay portrait */}
-          <div className="absolute -bottom-10 -right-6 w-[58%] max-w-[300px] rotate-[-4deg] animate-float-slow">
+          <div className="absolute -bottom-6 -left-6 w-[42%] max-w-[210px] rotate-[-4deg] animate-float-slow">
             <div className="relative ink-outline rounded-2xl overflow-hidden shadow-pop-lg bg-card">
               <img
                 src={denisImg}
@@ -73,7 +76,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
                 className="w-full h-auto object-cover block"
               />
             </div>
-            <div className="absolute -top-3 -left-3 bg-primary text-primary-foreground ink-outline rounded-full px-3 py-1 font-display uppercase text-xs shadow-pop -rotate-6">
+            <div className="absolute -top-3 -right-3 bg-primary text-primary-foreground ink-outline rounded-full px-3 py-1 font-display uppercase text-xs shadow-pop rotate-6">
               Denis
             </div>
           </div>
@@ -88,7 +91,7 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
       </div>
 
       {/* Marquee strip */}
-      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-4 overflow-hidden border-y-[3px] border-foreground">
+      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-6 overflow-hidden border-y-[3px] border-foreground flex items-center">
         <div className="flex gap-12 animate-marquee whitespace-nowrap font-display text-xl uppercase">
           {Array(10).fill(0).map((_, i) => (
             <span key={i} className="flex items-center gap-12">

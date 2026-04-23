@@ -6,6 +6,7 @@ const links = [
   { href: "#about", label: "Despre" },
   { href: "#services", label: "Servicii" },
   { href: "#work", label: "Shop" },
+  { href: "#gallery", label: "Galerie" },
   { href: "#reviews", label: "Păreri" },
   { href: "#contact", label: "Contact" },
 ];
