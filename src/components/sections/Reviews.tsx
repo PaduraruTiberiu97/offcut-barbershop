@@ -65,7 +65,9 @@ export const Reviews = () => {
               {[...Array(5)].map((_, i) => (
                 <Star key={i} className="h-4 w-4 fill-[hsl(var(--pop-yellow))] text-[hsl(var(--pop-yellow))]" />
               ))}
-              <span className="font-condensed text-sm tracking-wider uppercase ml-2">4.9 / 5 din multe review-uri</span>
+              <span className="font-condensed text-sm tracking-wider uppercase ml-2">
+                4.9 / 5 - din multe review-uri
+              </span>
             </div>
           </div>
         </Reveal>
