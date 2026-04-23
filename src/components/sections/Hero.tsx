@@ -99,8 +99,12 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
                 Tuns curat <span className="text-primary">✦</span>
                 Prosop fierbinte <span className="text-secondary">✦</span>
                 Programări online <span className="text-accent">✦</span>
-                Luni–Duminică <span className="text-[hsl(var(--pop-yellow))]">✦</span>
+                Toata saptamana <span className="text-[hsl(var(--pop-yellow))]">✦</span>
                 Vibe mișto <span className="text-primary">✦</span>
+                Sâmbătă\n09:00 – 15:00\n\n Duminică\n09:00 – 13:00 Luni – Vin\n09:00 – 19:30{" "}
+                <span className="text-secondary">✦</span>
+                Sâmbătă\n09:00 – 15:00 <span className="text-accent">✦</span>
+                Duminică\n09:00 – 13:00 <span className="text-[hsl(var(--pop-yellow))]">✦</span>
               </span>
             ))}
         </div>
