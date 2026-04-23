@@ -9,12 +9,12 @@ import w5 from "@/assets/work-5.jpg";
 import w6 from "@/assets/work-6.jpg";
 
 const works = [
-  { src: w1, label: "The Buzz", category: "Tools", tilt: "-rotate-2", color: "bg-secondary" },
-  { src: w2, label: "The Throne", category: "The chair", tilt: "rotate-1", color: "bg-primary" },
-  { src: w3, label: "The Kit", category: "Tools", tilt: "rotate-2", color: "bg-accent" },
-  { src: w4, label: "Open Late", category: "Street", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
-  { src: w5, label: "The Pole", category: "Out front", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
-  { src: w6, label: "House Tonics", category: "Shelf", tilt: "-rotate-2", color: "bg-[hsl(var(--pop-orange))]" },
+  { src: w1, label: "Mașina", category: "Scule", tilt: "-rotate-2", color: "bg-secondary" },
+  { src: w2, label: "Scaunul", category: "Locul", tilt: "rotate-1", color: "bg-primary" },
+  { src: w3, label: "Trusa", category: "Scule", tilt: "rotate-2", color: "bg-accent" },
+  { src: w4, label: "Deschis", category: "Stradă", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
+  { src: w5, label: "Stâlpul", category: "Vitrină", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
+  { src: w6, label: "Produsele", category: "Raft", tilt: "-rotate-2", color: "bg-[hsl(var(--pop-orange))]" },
 ];
 
 export const Work = () => {
@@ -27,14 +27,14 @@ export const Work = () => {
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
             <div>
               <div className="inline-block bg-primary text-primary-foreground ink-outline rounded-full px-4 py-1 font-display uppercase text-xs tracking-widest mb-4">
-                The Shop
+                Shop-ul
               </div>
               <h2 className="font-display text-5xl lg:text-7xl uppercase leading-[0.9]">
-                Inside<br/>the <span className="text-primary text-shadow-pop">shop.</span>
+                Pe<br/>din<span className="text-primary text-shadow-pop"> ăuntru.</span>
               </h2>
             </div>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/70 max-w-sm">
-              Brick walls. Buzzing clippers. A little neon. Tap a frame.
+              Pereți de cărămidă. Mașini de tuns. Puțin neon. Apasă pe poză.
             </p>
           </div>
         </Reveal>
@@ -73,7 +73,7 @@ export const Work = () => {
           <button
             className="absolute top-6 right-6 h-12 w-12 grid place-items-center bg-primary text-primary-foreground ink-outline rounded-full shadow-pop hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all"
             onClick={() => setActive(null)}
-            aria-label="Close"
+            aria-label="Închide"
           >
             <X />
           </button>

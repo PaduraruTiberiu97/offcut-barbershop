@@ -3,9 +3,9 @@ import { Award, Clock, Sparkles } from "lucide-react";
 import shopImg from "@/assets/shop-interior.jpg";
 
 const features = [
-  { icon: Award, title: "Trained Old-School", text: "Learned in my uncle's shop. Classic technique, modern edge.", color: "bg-secondary" },
-  { icon: Sparkles, title: "Built For You", text: "Every cut starts with a real conversation. Your face, your style.", color: "bg-accent" },
-  { icon: Clock, title: "No Rush, No Bull", text: "Solo chair means no double bookings. Just focus on you.", color: "bg-primary text-primary-foreground" },
+  { icon: Award, title: "Școala veche", text: "Am învățat meseria pe bune, nu de pe TikTok. Tehnică clasică, ochi pentru detaliu.", color: "bg-secondary" },
+  { icon: Sparkles, title: "Făcut pe tine", text: "Orice tunsoare începe cu o discuție. Fața ta, stilul tău, nu un șablon.", color: "bg-accent" },
+  { icon: Clock, title: "Fără grabă", text: "Un singur scaun, zero suprapuneri. Vii la oră, pleci mulțumit.", color: "bg-primary text-primary-foreground" },
 ];
 
 export const About = () => {
@@ -17,12 +17,12 @@ export const About = () => {
             <div className="absolute -top-4 -left-4 w-full h-full rounded-2xl bg-[hsl(var(--pop-yellow))] ink-outline" />
             <img
               src={shopImg}
-              alt="The shop"
+              alt="Interior Offcut"
               loading="lazy"
               className="relative w-full h-[520px] object-cover rounded-2xl ink-outline shadow-pop"
             />
             <div className="absolute -bottom-5 -right-5 bg-primary text-primary-foreground ink-outline rounded-xl px-5 py-3 font-display uppercase text-sm shadow-pop -rotate-3">
-              The Chair · Brooklyn
+              Offcut · Scaunul lui Denis
             </div>
           </div>
         </Reveal>
@@ -30,14 +30,14 @@ export const About = () => {
         <div className="space-y-8">
           <Reveal>
             <div className="inline-block bg-accent text-accent-foreground ink-outline rounded-full px-4 py-1 font-display uppercase text-xs tracking-widest">
-              About Marco
+              Despre Denis
             </div>
             <h2 className="font-display text-5xl lg:text-7xl leading-[0.9] uppercase mt-4">
-              A craft<br/>refined on<br/><span className="text-primary text-shadow-pop">the block.</span>
+              Meseria<br/>se învață<br/><span className="text-primary text-shadow-pop">pe stradă.</span>
             </h2>
             <p className="font-sans text-lg leading-relaxed mt-6 max-w-md text-foreground/80">
-              I'm Marco. Started cutting heads in my uncle's shop in Naples. Now I run the only chair at
-              The Gentleman's Chair — one seat, one mission: deliver the cleanest cut on this side of town.
+              Sunt Denis. Am început să tund prin cartier, am prins meseria de la oameni care chiar știu ce fac.
+              Acum țin singur scaunul de la Offcut — un loc, o misiune: cea mai curată tunsoare din zonă.
             </p>
           </Reveal>
 

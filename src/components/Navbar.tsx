@@ -3,10 +3,10 @@ import { Menu, X, Scissors } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const links = [
-  { href: "#about", label: "About" },
-  { href: "#services", label: "Services" },
-  { href: "#work", label: "Work" },
-  { href: "#reviews", label: "Reviews" },
+  { href: "#about", label: "Despre" },
+  { href: "#services", label: "Servicii" },
+  { href: "#work", label: "Shop" },
+  { href: "#reviews", label: "Păreri" },
   { href: "#contact", label: "Contact" },
 ];
 
@@ -32,7 +32,7 @@ export const Navbar = ({ bookingUrl }: { bookingUrl: string }) => {
             <Scissors className="h-4 w-4" />
           </div>
           <span className="font-display text-xl tracking-wider uppercase">
-            MARCO<span className="text-primary">.</span>
+            OFFCUT<span className="text-primary">.</span>
           </span>
         </a>
 
@@ -51,14 +51,14 @@ export const Navbar = ({ bookingUrl }: { bookingUrl: string }) => {
 
         <div className="hidden md:block">
           <Button asChild variant="gold" size="sm">
-            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Book Now</a>
+            <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Programare</a>
           </Button>
         </div>
 
         <button
           className="md:hidden text-foreground"
           onClick={() => setOpen(!open)}
-          aria-label="Toggle menu"
+          aria-label="Meniu"
         >
           {open ? <X /> : <Menu />}
         </button>
@@ -79,7 +79,7 @@ export const Navbar = ({ bookingUrl }: { bookingUrl: string }) => {
               </li>
             ))}
             <Button asChild variant="gold" className="mt-2 mx-4">
-              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Book Now</a>
+              <a href={bookingUrl} target="_blank" rel="noopener noreferrer">Programare</a>
             </Button>
           </ul>
         </div>
