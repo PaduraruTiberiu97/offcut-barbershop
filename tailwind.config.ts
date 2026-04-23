@@ -14,9 +14,9 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ['"Bowlby One"', 'Impact', 'sans-serif'],
-        condensed: ['"Bungee"', 'Impact', 'sans-serif'],
-        serif: ['"Bowlby One"', 'Impact', 'sans-serif'],
+        display: ['"Bowlby One"', '"Anton"', 'Impact', 'sans-serif'],
+        condensed: ['"Bungee"', '"Anton"', 'Impact', 'sans-serif'],
+        serif: ['"Bowlby One"', '"Anton"', 'Impact', 'sans-serif'],
         sans: ['"Space Grotesk"', 'Inter', 'system-ui', 'sans-serif'],
       },
       colors: {
