@@ -5,7 +5,7 @@ import { ArrowRight, Scissors, Zap } from "lucide-react";
 
 export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
   return (
-    <section id="top" className="relative min-h-screen overflow-hidden pt-28 pb-20 bg-halftone">
+    <section id="top" className="relative min-h-screen overflow-hidden pt-28 pb-44 bg-halftone">
       {/* Floating chunky shapes */}
       <div className="pointer-events-none absolute -top-10 -left-10 w-48 h-48 rounded-full bg-secondary border-[3px] border-foreground" />
       <div className="pointer-events-none absolute top-40 right-10 w-24 h-24 rounded-full bg-accent border-[3px] border-foreground animate-float-slow" />
@@ -91,10 +91,10 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
       </div>
 
       {/* Marquee strip */}
-      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-6 overflow-hidden border-y-[3px] border-foreground flex items-center">
-        <div className="flex gap-12 animate-marquee whitespace-nowrap font-display text-xl uppercase">
+      <div className="absolute bottom-0 inset-x-0 bg-foreground text-background py-3 overflow-hidden border-y-[3px] border-foreground flex items-center">
+        <div className="flex gap-10 animate-marquee whitespace-nowrap font-display text-sm uppercase">
           {Array(10).fill(0).map((_, i) => (
-            <span key={i} className="flex items-center gap-12">
+            <span key={i} className="flex items-center gap-10">
               Tuns curat <span className="text-primary">✦</span>
               Prosop fierbinte <span className="text-secondary">✦</span>
               Programări online <span className="text-accent">✦</span>
