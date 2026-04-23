@@ -3,9 +3,24 @@ import { Award, Clock, Sparkles } from "lucide-react";
 import shopImg from "@/assets/shop-interior.jpg";
 
 const features = [
-  { icon: Award, title: "Școala veche", text: "Am învățat meseria pe bune, nu de pe TikTok. Tehnică clasică, ochi pentru detaliu.", color: "bg-secondary" },
-  { icon: Sparkles, title: "Făcut pe tine", text: "Orice tunsoare începe cu o discuție. Fața ta, stilul tău, nu un șablon.", color: "bg-accent" },
-  { icon: Clock, title: "Fără grabă", text: "Un singur scaun, zero suprapuneri. Vii la oră, pleci mulțumit.", color: "bg-primary text-primary-foreground" },
+  {
+    icon: Award,
+    title: "Școala veche",
+    text: "Am învățat meseria pe bune, nu de pe TikTok. Tehnică clasică, ochi pentru detaliu.",
+    color: "bg-secondary",
+  },
+  {
+    icon: Sparkles,
+    title: "Făcut pe tine",
+    text: "Orice tunsoare începe cu o discuție. Fața ta, stilul tău, nu un șablon.",
+    color: "bg-accent",
+  },
+  {
+    icon: Clock,
+    title: "Fără grabă",
+    text: "Un singur scaun, zero suprapuneri. Vii la oră, pleci mulțumit.",
+    color: "bg-primary text-primary-foreground",
+  },
 ];
 
 export const About = () => {
@@ -33,18 +48,24 @@ export const About = () => {
               Despre Denis
             </div>
             <h2 className="font-display text-5xl lg:text-7xl leading-[0.9] uppercase mt-4">
-              Meseria<br/>se învață<br/><span className="text-primary text-shadow-pop">pe stradă.</span>
+              Meseria
+              <br />
+              se învață
+              <br />
+              <span className="text-primary text-shadow-pop">pe stradă.</span>
             </h2>
             <p className="font-sans text-lg leading-relaxed mt-6 max-w-md text-foreground/80">
-              Sunt Denis. Am început să tund prin cartier, am prins meseria de la oameni care chiar știu ce fac.
-              Acum țin singur scaunul de la Offcut — un loc, o misiune: cea mai curată tunsoare din zonă.
+              Sunt Denis. Am început să tund prin cartier, am prins meseria de la oameni care chiar știu ce fac. Acum
+              țin scaunul de la Offcut — un loc, o misiune: cea mai curată tunsoare din zonă.
             </p>
           </Reveal>
 
           <div className="grid gap-4">
             {features.map((f, i) => (
               <Reveal key={f.title} delay={i * 100}>
-                <div className={`group flex gap-5 p-5 ${f.color} ink-outline rounded-xl shadow-pop hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all`}>
+                <div
+                  className={`group flex gap-5 p-5 ${f.color} ink-outline rounded-xl shadow-pop hover:translate-x-1 hover:translate-y-1 hover:shadow-none transition-all`}
+                >
                   <div className="shrink-0 h-12 w-12 grid place-items-center bg-background ink-outline rounded-lg">
                     <f.icon className="h-5 w-5 text-foreground" />
                   </div>

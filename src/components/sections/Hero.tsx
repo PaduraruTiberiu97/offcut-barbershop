@@ -98,7 +98,8 @@ export const Hero = ({ bookingUrl }: { bookingUrl: string }) => {
                 Tuns curat <span className="text-primary">✦</span>
                 Prosop fierbinte <span className="text-secondary">✦</span>
                 Programări online <span className="text-accent">✦</span>
-                Marți–Sâmbătă <span className="text-[hsl(var(--pop-yellow))]">✦</span>
+                Luni–Duminică <span className="text-[hsl(var(--pop-yellow))]">✦</span>
+                Vibe misto <span className="text-primary">✦</span>
               </span>
             ))}
         </div>

@@ -16,7 +16,6 @@ const works = [
   { src: s2, label: "Sculele", category: "Trusa", tilt: "-rotate-1", color: "bg-[hsl(var(--pop-yellow))]" },
   { src: s6, label: "Offcut Wall", category: "Graffiti", tilt: "rotate-2", color: "bg-[hsl(var(--pop-purple))]" },
   { src: s1, label: "Spirit", category: "Colțul", tilt: "-rotate-2", color: "bg-[hsl(var(--pop-orange))]" },
-  { src: s4, label: "Barber", category: "Perete", tilt: "rotate-1", color: "bg-secondary" },
 ];
 
 export const Work = () => {
@@ -32,11 +31,13 @@ export const Work = () => {
                 Shop-ul
               </div>
               <h2 className="font-display text-5xl lg:text-7xl uppercase leading-[0.9]">
-                Pe<br/><span className="text-primary text-shadow-pop">dinăuntru.</span>
+                Pe
+                <br />
+                <span className="text-primary text-shadow-pop">dinăuntru.</span>
               </h2>
             </div>
             <p className="font-condensed text-xl uppercase tracking-wider text-foreground/70 max-w-sm">
-              Graffiti pe pereți. Hexagoane pe tavan. Rick & Morty te privesc cum te tunzi.
+              Pereți cu personalitate, detalii care ies în evidență și o atmosferă relaxată.
             </p>
           </div>
         </Reveal>
@@ -57,7 +58,9 @@ export const Work = () => {
                   />
                 </div>
                 <div className="bg-background border-t-[3px] border-foreground p-4 text-left">
-                  <div className="font-condensed text-[11px] uppercase tracking-[0.25em] text-primary mb-1">{w.category}</div>
+                  <div className="font-condensed text-[11px] uppercase tracking-[0.25em] text-primary mb-1">
+                    {w.category}
+                  </div>
                   <div className="font-display text-xl uppercase">{w.label}</div>
                 </div>
               </button>
